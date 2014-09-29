@@ -1,0 +1,6 @@
+creative portion by ethan bresler & kushal raj
+ID’s 429128, 425843
+our creative portion consists of an upvote/downvote system. users are able to upvote or downvote a post a single time.
+the website uses AJAX so the website does not have to be refreshed manually in order to display the new information.
+posts are then ordered in ascending order, with the post with the most upvotes at the top.
+http://ec2-54-68-224-35.us-west-2.compute.amazonaws.com/~ethanbresler/news/index.php
