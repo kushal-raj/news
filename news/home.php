@@ -37,6 +37,9 @@ document.getElementById(id).innerHTML="("+xmlhttp.responseText+" points)";
 <a href="index.php?logout=true">Log out</a>
 <br>---------------------------------<br>
 <?php
+session_start();
+$mysqli = new mysqli('localhost', 'news', 'news', 'newssite');
+ 
 if (isset($_SESSION['id'])){
 echo '<textarea rows=2 name="title" form="post" placeholder="Title"></textarea>
 <textarea rows=2 name="link" form="post" placeholder="Link"></textarea>
@@ -50,9 +53,7 @@ echo '<textarea rows=2 name="title" form="post" placeholder="Title"></textarea>
 ?>
 <br>---------------------------------<br>
 <?php
-session_start();
-$mysqli = new mysqli('localhost', 'news', 'news', 'newssite');
- 
+
 if($mysqli->connect_errno) {
 	printf("Connection Failed: %s\n", $mysqli->connect_error);
 	exit;
